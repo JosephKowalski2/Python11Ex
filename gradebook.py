@@ -48,3 +48,21 @@ class Classroom:
         self.instructors = []
 
     def add_instructor(self, instructor):
+        self.instructors.append(instructor)
+
+    def remove_instructor(self, instructor):
+        self.instructors.remove(instructor)
+
+    def add_student(self, student):
+        self.students.append(student)
+
+    def remove_student(self, student):
+        self.students.remove(student)
+
+    def print_instructors(self):
+        for i in self.instructors:
+            print(i)
+
+    def print_students(self):
+        for s in self.students:
+            print(s)
